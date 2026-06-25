@@ -1,0 +1,113 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 4, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 2rem;
+}
+
+.receipt-modal {
+  background: var(--foam);
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 420px;
+  width: 100%;
+}
+
+.receipt-header {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px dashed rgba(192,123,46,0.3);
+}
+.receipt-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--espresso);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.receipt-logo span { color: var(--caramel); }
+.receipt-address {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.receipt-date {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+.receipt-meta { margin-bottom: 1rem; }
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--espresso);
+  padding: 0.35rem 0;
+}
+.receipt-row.muted { color: var(--muted); font-size: 0.88rem; }
+.receipt-val { font-weight: 600; }
+.receipt-item-name { font-weight: 500; }
+
+.receipt-divider {
+  border: none;
+  border-top: 1px dashed rgba(192,123,46,0.3);
+  margin: 1rem 0;
+}
+
+.receipt-items { margin-bottom: 0.5rem; }
+.receipt-totals { margin-bottom: 0.5rem; }
+
+.receipt-grand-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--espresso);
+}
+.receipt-grand-total span:last-child { color: var(--caramel); }
+
+.receipt-thank-you {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 1.2rem;
+}
+
+.receipt-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.8rem;
+}
+.receipt-close-btn {
+  flex: 1;
+  background: transparent;
+  border: 1.5px solid rgba(26,10,0,0.2);
+  color: var(--espresso);
+  border-radius: 12px;
+  padding: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+}
+.receipt-close-btn:hover { border-color: var(--caramel); color: var(--caramel); }
+.receipt-download-btn {
+  flex: 2;
+  background: var(--espresso);
+  color: var(--cream);
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+}
+.receipt-download-btn:hover { background: var(--caramel); }
