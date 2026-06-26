@@ -1,5 +1,4 @@
-export const BASE_URL = 'http://localhost:9000/api';
-
+export const BASE_URL = 'https://mrcoffee-backend.onrender.com/api';
 // AUTH
 export const loginUser = async (email, password) => {
   const res = await fetch(`${BASE_URL}/auth/login`, {
