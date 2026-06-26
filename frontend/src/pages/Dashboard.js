@@ -134,18 +134,17 @@ function PaymentModal({ order, onClose, onPaymentSelect }) {
         <div className="payment-methods-title">Choose Payment App</div>
 
         <div className="payment-methods-grid">
-          {UPI_APPS.map(app => (
-            <a
-              key={app.id}
-              className="upi-app"
-              onClick={() => handleUPIRedirect(app, order.price * order.quantity)}
-              role="button"
-              tabIndex={0}
-            >
-              <div className="upi-app-icon">{app.icon}</div>
-              <div className="upi-app-name">{app.name}</div>
-            </a>
-          ))}
+         {UPI_APPS.map(app => (
+  <button
+    key={app.id}
+    type="button"
+    className="upi-app"
+    onClick={() => handleUPIRedirect(app, order.price * order.quantity)}
+  >
+    <div className="upi-app-icon">{app.icon}</div>
+    <div className="upi-app-name">{app.name}</div>
+  </button>
+))}
         </div>
 
         <div className="payment-info">
