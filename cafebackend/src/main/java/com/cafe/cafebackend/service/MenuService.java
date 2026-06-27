@@ -16,10 +16,18 @@ public class MenuService {
 
     public String addMenu(Menu menu) {
 
-        menuRepository.save(menu);
+    System.out.println("===== ADD MENU REQUEST =====");
+    System.out.println("Category: " + menu.getCategory());
+    System.out.println("Item: " + menu.getItemName());
+    System.out.println("Price: " + menu.getPrice());
 
-        return "Menu Item Added Successfully";
-    }
+    menuRepository.save(menu);
+
+    System.out.println("Menu saved successfully.");
+    System.out.println("Total Menu Items: " + menuRepository.count());
+
+    return "Menu Item Added Successfully";
+}
 
     public List<Menu> getAllMenus() {
 
