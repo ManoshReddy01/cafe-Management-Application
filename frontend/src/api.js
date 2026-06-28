@@ -1,5 +1,5 @@
-// Local Spring Boot Backend
-export const BASE_URL = "https://mrcoffee-backend.onrender.com/api";
+// Backend base URL. Override in Vercel with REACT_APP_API_URL if needed.
+export const BASE_URL = process.env.REACT_APP_API_URL || "https://mrcoffee-backend.onrender.com/api";
 
 // ======================
 // AUTH APIs

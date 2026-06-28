@@ -13,7 +13,7 @@ import com.cafe.cafebackend.service.OrderService;
 
 @RestController
 @RequestMapping("/api/admin")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class AdminController {
 
     @Autowired
