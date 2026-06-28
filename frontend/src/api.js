@@ -1,5 +1,5 @@
 // Backend base URL. Override in Vercel with REACT_APP_API_URL if needed.
-const BASE_URL = "http://localhost:8080/api";
+const BASE_URL = "https://cafe-management-application.onrender.com/api";
 // ======================
 // AUTH APIs
 // ======================
