@@ -1,6 +1,5 @@
 // Backend base URL. Override in Vercel with REACT_APP_API_URL if needed.
-export const BASE_URL = process.env.REACT_APP_API_URL || "https://mrcoffee-backend.onrender.com/api";
-
+const BASE_URL = "http://localhost:8080/api";
 // ======================
 // AUTH APIs
 // ======================
